@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+    <configuration>
+        <trim-strings>true</trim-strings>
+    </configuration>
+    
+    <mapping map-empty-string="false">
+        <class-a>com.irs.springsearchfilterwebapp.presentacion.commands.administracion.UsuarioSearchCommand</class-a>
+        <class-b>com.irs.springsearchfilterwebapp.negocio.vo.FilterUsuarioVO</class-b>
+        <field custom-converter="com.irs.springsearchfilterwebapp.presentacion.util.IdentificableDozerConverter"> 
+            <a>rol</a>
+            <b>rol</b>
+        </field>
+    </mapping>
+    <mapping map-empty-string="false">
+        <class-a>com.irs.springsearchfilterwebapp.presentacion.commands.administracion.UsuarioEditCommand</class-a>
+        <class-b>com.irs.springsearchfilterwebapp.negocio.vo.UsuarioVO</class-b>
+        <field custom-converter="com.irs.springsearchfilterwebapp.presentacion.util.UpperStringDozerConverter">
+            <a>nif</a>
+            <b>nif</b>
+        </field>
+        <field custom-converter="com.irs.springsearchfilterwebapp.presentacion.util.UpperStringDozerConverter">
+            <a>nombre</a>
+            <b>nombre</b>
+        </field>
+        <field custom-converter="com.irs.springsearchfilterwebapp.presentacion.util.UpperStringDozerConverter">
+            <a>apellido1</a>
+            <b>apellido1</b>
+        </field>
+        <field custom-converter="com.irs.springsearchfilterwebapp.presentacion.util.UpperStringDozerConverter">
+            <a>apellido2</a>
+            <b>apellido2</b>
+        </field>
+        <field custom-converter="com.irs.springsearchfilterwebapp.presentacion.util.IdentificableDozerConverter"> 
+            <a>rol</a>
+            <b>rol</b>
+        </field>
+    </mapping>
+</mappings>
